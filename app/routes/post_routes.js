@@ -1,5 +1,8 @@
 import PostController from '../controllers/post_controller';
 
+// Sets which routes the app should listen to
+// Redirects each route to a controller action
+
 class PostRoutes {
   static register(app) {
     app.get('/posts', (req, res) => PostController.index(req, res));

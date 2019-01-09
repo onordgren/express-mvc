@@ -1,5 +1,8 @@
 import Post from '../models/post_model';
 
+// Contains one method for each route
+// Fetches stuff using the model and returns a view or JSON
+
 class PostController {
   static index(req, res) {
     Post.all((posts) => {
