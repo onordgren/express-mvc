@@ -1,0 +1,6 @@
+extends ../application
+
+block content
+    for post, i in posts
+        div
+            a(href='/posts/' + i)=post.title
